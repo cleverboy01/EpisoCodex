@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases & Runtime Logs
+agents/logs/*.db
+agents/logs/*.json
+!agents/logs/skill-index.json # Keep initial empty / structure if needed, or ignore
+agents/logs/live-session.json
+agents/logs/token-ledger.json
+agents/logs/session-decisions.json
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temp folders
+Antigravity-Manager/
+Antigravity-Manager-main/
+gui/__pycache__/

@@ -1,0 +1,134 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/prompt_catcher.py",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "run_terminal_cmd",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/safe_shell_guard.py",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "view_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/token_squeezer.py",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/antigravity_manager.py check",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/antigravity_manager.py",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/tool_logger.py",
+            "timeout": 3
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/error_pattern_tracker.py",
+            "timeout": 3
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/rlhf_feedback_loop.py",
+            "timeout": 4,
+            "comment": "RLHF: captures errors with resolution tracking for active learning"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/error_pattern_tracker.py",
+            "timeout": 3
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/rlhf_feedback_loop.py",
+            "timeout": 4,
+            "comment": "RLHF: records error category + context for feedback loop learning"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/session_log.py",
+            "timeout": 3
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/skill_indexer.py --hook",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/session_log.py",
+            "timeout": 3
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/session_memory_flush.py",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/episodic_memory.py",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "python agents/hooks/bin/self_rewrite_engine.py",
+            "timeout": 10,
+            "comment": "Self-Rewrite: background scan of hook scripts; writes rewrite-priorities.json"
+          }
+        ]
+      }
+    ]
+  }
+}
