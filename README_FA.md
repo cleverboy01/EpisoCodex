@@ -16,6 +16,8 @@
 
 </div>
 
+> ℹ️ **توضیح:** این پروژه برگرفته از کدهای پروژه **grok-build** به آدرس [https://github.com/xai-org/grok-build](https://github.com/xai-org/grok-build) می‌باشد.
+
 ---
 
 ## تفاوت اصلی این پروژه چیست؟

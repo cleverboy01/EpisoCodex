@@ -16,6 +16,8 @@ Drop it into any project. Your AI assistant becomes a self-healing, self-learnin
 
 </div>
 
+> ℹ️ **Notice / یادداشت:** This project is derived from the **grok-build** repository available at: [https://github.com/xai-org/grok-build](https://github.com/xai-org/grok-build)
+
 ---
 
 ## What Makes This Different
