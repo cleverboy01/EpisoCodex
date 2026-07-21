@@ -1,43 +1,54 @@
-# 🚀 EpisoCodex — Autonomous Engineering Framework
+# 🚀 EpisoCodex — Grok Build Autonomous AI Engineering Framework
 
 <div align="center">
 
-![Based On Grok-Build](https://img.shields.io/badge/Inspired%20By-xAI%20grok--build-red?style=for-the-badge&logo=github)
+![xAI Grok Build](https://img.shields.io/badge/xAI%20Grok--Build-Autonomous%20Agent-red?style=for-the-badge&logo=github)
+![Grok AI](https://img.shields.io/badge/Grok--AI-Code%20Agent-black?style=for-the-badge&logo=x)
 ![Version](https://img.shields.io/badge/Version-2.0-blue?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.11+-green?style=for-the-badge&logo=python)
 ![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=for-the-badge)
-![Token Optimized](https://img.shields.io/badge/Token%20Optimized-Yes-brightgreen?style=for-the-badge)
 
 <br/>
 
-### 💡 **An autonomous AI software engineering framework inspired by and derived from xAI's [grok-build](https://github.com/xai-org/grok-build).**
+### 💡 **An open-source autonomous AI software engineering framework built upon the core architecture of xAI's [grok-build](https://github.com/xai-org/grok-build).**
 
-*Turn your AI coding assistant into a self-healing, self-learning, token-efficient autonomous engineer.*
+*Empower your IDE with Grok Build capabilities: self-healing, self-learning, and token-efficient AI agents.*
 
-[Quick Start](#-quick-start) • [Features](#-key-features) • [Architecture](#-architecture) • [CLI Reference](#-cli-reference) • [IDE Integration](#-ide-integration) • [License](#-license)
+[Quick Start](#-quick-start) • [Grok Build Architecture](#-grok-build-architecture) • [Features](#-key-features) • [CLI Reference](#-cli-reference) • [SEO & Keywords](#-keywords--search-index) • [License](#-license)
 
 ---
 
 </div>
 
 > [!NOTE]
-> ℹ️ **Attribution Notice / یادداشت شفافیت:**
-> This repository is built upon the architectural patterns and core execution concepts of xAI's open-source **[grok-build](https://github.com/xai-org/grok-build)** project.
+> ℹ️ **Attribution Notice:**
+> **EpisoCodex** is an open-source enhancement and adaptation derived from the **[xAI grok-build](https://github.com/xai-org/grok-build)** codebase and agent design specification.
 
 ---
 
-## ⚡ What Makes EpisoCodex Different?
+## 🔍 Overview: Grok Build Autonomous Engineering
 
-Standard AI coding tools rely on static system prompts and unoptimized context windows. **EpisoCodex** brings an Operating System level cognitive harness to your IDE, powered by **grok-build** autonomous concepts.
+**EpisoCodex (Grok Build Engine)** brings xAI's **grok-build** autonomous coding capabilities directly to local development environments, Cursor, Windsurf, and Antigravity IDE. Designed for token efficiency, multi-agent coordination, and self-healing execution loops.
 
-| Capability | Standard AI Extension | EpisoCodex (Grok-Build Architecture) |
+### Key Keywords & Focus Areas
+* **grok-build** / **grok build**: Autonomous AI developer harness & workflow execution.
+* **xAI / Grok AI**: Modern LLM agent orchestration, system-2 reasoning, and sandbox execution.
+* **Proto-AGI Coding Harness**: Self-learning RLHF memory loops and AST chunk optimization.
+
+---
+
+## ⚡ What Makes Grok Build Architecture Different?
+
+Standard AI coding extensions rely on static system prompts and unoptimized context windows. **EpisoCodex**, using **grok-build** core principles, acts as an Operating System for your AI coding assistant:
+
+| Capability | Standard AI Extension | Grok Build Engine (EpisoCodex) |
 |---|---|---|
-| 🔀 **Skill Routing** | Manual & static prompts | **Semantic Skill Router** loads only required tools |
-| 🧠 **Error Avoidance** | Repeated trial-and-error | **RLHF Feedback Loop** remembers past mistakes |
-| 🛡️ **Token Efficiency** | Burns context rapidly | **Token Squeezer Guard** enforces surgical file reading |
-| 🏖️ **Safety & Verification** | Directly mutates codebase | **Sandbox Simulator** verifies code before applying |
-| 📝 **Session Persistence** | Context cleared on reset | **Episodic Memory** persists across sessions |
-| 🔧 **Code Quality** | Manual refactoring needed | **Self-Rewrite Engine** auto-proposes improvements |
+| 🔀 **Skill Routing** | Manual static prompts | **Semantic Skill Router** auto-loads relevant tools |
+| 🧠 **Error Avoidance** | Repeated trial-and-error | **RLHF Feedback Loop** remembers and avoids past errors |
+| 🛡️ **Token Efficiency** | Context window burn | **Token Squeezer Guard** prevents wasteful file reads |
+| 🏖️ **Safety & Verification** | Direct codebase edits | **Sandbox Simulator** tests patches before applying |
+| 📝 **Session Persistence** | Context lost on reset | **Episodic Memory** persists across developer sessions |
+| 🔧 **Self-Improvement** | Manual code review | **Self-Rewrite Engine** auto-proposes refactorings |
 
 ---
 
@@ -45,7 +56,7 @@ Standard AI coding tools rely on static system prompts and unoptimized context w
 
 ### 1. Clone & Setup
 ```bash
-# Clone repository
+# Clone the Grok Build inspired repository
 git clone https://github.com/cleverboy01/EpisoCodex.git
 cd EpisoCodex
 
@@ -55,23 +66,23 @@ python setup.py
 
 ### 2. Launch Workspace
 ```bash
-# Option A: Modern Desktop GUI Dashboard
+# Launch Modern Desktop GUI Dashboard
 python gui/guicli.py
 
-# Option B: Terminal Live AGI Dashboard
+# Or launch Terminal Live AGI Dashboard
 python agicli.py
 ```
 
-### 3. Run Autonomous Task
+### 3. Run Autonomous Grok Task
 ```bash
-python agicli.py run "refactor the authentication module to use JWT"
+python agicli.py run "refactor authentication module using JWT and verify in sandbox"
 ```
 
-> 💡 **No External API Keys Required:** Runs completely locally using your active IDE assistant (Cursor, Windsurf, Antigravity IDE, etc.).
+> 💡 **No Proprietary API Keys Required:** Operates locally with your existing AI assistant (Cursor, Windsurf, Antigravity IDE, Claude, GPT-4, Grok).
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Grok Build Architecture
 
 ### Cognitive Execution Loop
 
@@ -101,42 +112,9 @@ flowchart TD
     style D fill:#0f3460,color:#53d8fb
 ```
 
-### System Stack
-
-```mermaid
-graph LR
-    subgraph CLI["🖥️ Command Center"]
-        STIC[agicli.py]
-    end
-
-    subgraph Cognitive["🧠 Cognitive Engine"]
-        SR[Skill Router]
-        RL[RLHF Loop]
-        EM[Episodic Memory]
-        RE[Self-Rewrite]
-    end
-
-    subgraph Safety["🛡️ Safety & Optimization"]
-        SG[Shell Guard]
-        TS[Token Squeezer]
-        SB[Sandbox Runner]
-    end
-
-    subgraph Storage["💾 Persistence"]
-        SI[(Skill Index)]
-        RD[(RLHF DB)]
-        ED[(Episodic DB)]
-    end
-
-    CLI --> Cognitive
-    CLI --> Safety
-    Cognitive --> Storage
-    Safety --> Storage
-```
-
 ---
 
-## 🖥️ Desktop GUI (CustomTkinter)
+## 🖥️ Desktop GUI (Antigravity & Grok Manager)
 
 Located inside `gui/guicli.py`, the desktop application offers a clean visual interface for monitoring AI operations:
 * 📡 **Live IDE Sync Dashboard:** Real-time stream of active tools and editor state.
@@ -146,22 +124,12 @@ Located inside `gui/guicli.py`, the desktop application offers a clean visual in
 
 ---
 
-## 🔀 Cognitive Phases
-
-1. **Dynamic Skill Retrieval:** Only loads tools relevant to the current query.
-2. **Self-Evolution:** Synthesizes missing skills dynamically when required.
-3. **Episodic Memory:** Preflight checks for past errors before writing code.
-4. **System-2 Thinking:** Critic review and sandbox isolation for high-risk edits.
-5. **Proactive Agency:** Autonomously scans workspace for technical debt when idle.
-
----
-
 ## 📖 CLI Reference
 
 | Command | Description |
 |---|---|
 | `python agicli.py` | Open interactive terminal dashboard |
-| `python agicli.py run "<task>"` | Execute task through full cognitive loop |
+| `python agicli.py run "<task>"` | Execute task through full Grok build cognitive loop |
 | `python agicli.py loop [--iterations N]` | Start continuous self-improvement loop |
 | `python agicli.py tokens` | Display current token budget ledger |
 | `python agicli.py scan` | Run codebase health & rewrite scan |
@@ -169,10 +137,16 @@ Located inside `gui/guicli.py`, the desktop application offers a clean visual in
 
 ---
 
-## 🛠️ IDE Integration
+## 🛠️ IDE Integration (Cursor, Windsurf, Antigravity)
 
 * **Cursor / Windsurf:** Copy `agents/` folder into your project root and import `agents/.cursorrules`.
 * **Antigravity IDE:** Automatic hook detection via `agents/hooks/agent-hooks.json`.
+
+---
+
+## 🔑 Keywords & Search Index
+
+`grok-build` `grok build` `xai grok` `grok ai` `grok-code` `xai-org/grok-build` `autonomous-agent` `ai-software-engineer` `proto-agi` `cursor-rules` `windsurf-ai` `token-optimization` `rlhf-agent` `self-healing-code` `antigravity-agi` `episocodex`
 
 ---
 
@@ -186,7 +160,7 @@ Distributed under the **Apache 2.0 License**.
 
 <div align="center">
 
-**Built with 🧠 EpisoCodex (Inspired by xAI's grok-build)**  
+**Built with 🧠 EpisoCodex — Powered by xAI's grok-build architecture**  
 ⭐ Star this repository if you find it helpful!
 
 </div>
