@@ -161,4 +161,6 @@ IDE IntegrationCursor / WindsurfCopy the agents/ folder to your project root.In 
 │   ├── skills/                     ← ⚡ Slash-command skills
 │   └── specs/                      ← 📖 System design specs
 └── README.md
+
+
 Acknowledgments & LicenseThis project incorporates architectural concepts and code patterns adapted from xAI's open-source grok-build project.Distributed under the Apache 2.0 license. Free for personal and commercial use.Built with 🧠 Antigravity AGI (Powered by Grok-Build concepts)The token-efficient, self-learning AI coding harness.⭐ Star this repo if it made your AI smarter!
